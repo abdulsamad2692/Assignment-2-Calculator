@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+<h1>Simple Calculator</h1>
+<p>The most simple mathematical operations: addition, subtraction, multiplication, division.</p>
+Number1:<input type="number" id="Number1">
+<br><br>
+Number2:<input type="number" id="Number2">
+<br><br>
+<button onclick="mysumfunction()">Addition</button>
+<br>
+<button onclick="myminfunction()">Sustraction</button>
+<br>
+<button onclick="mymulfunction()">Multiplication</button>
+<br>
+<button onclick="mydivfunction()">Diviion</button>
+<br>
+
+<script>
+
+    function mysumfunction() {
+        let Number1 = document.getElementById("Number1").value;
+        let Number2 = document.getElementById("Number2").value;
+        let addresult = Number(Number1) + Number(Number2);
+        console.log("Addition_result ", addresult)
+    }
+    function myminfunction() {
+        let Number1 = document.getElementById("Number1").value;
+        let Number2 = document.getElementById("Number2").value;
+        let subresult = Number(Number1) - Number(Number2);
+        console.log("Substraction_result ", subresult)
+    }
+    function mymulfunction() {
+        let Number1 = document.getElementById("Number1").value;
+        let Number2 = document.getElementById("Number2").value;
+        let mulresult = Number(Number1) * Number(Number2);
+        console.log("Multiplication_result ", mulresult)
+    }
+    function mydivfunction() {
+        let Number1 = document.getElementById("Number1").value;
+        let Number2 = document.getElementById("Number2").value;
+        let divresult = Number(Number1) / Number(Number2);
+        console.log("Division_result ", divresult)
+    }
+</script>
+</body>
+</html>
